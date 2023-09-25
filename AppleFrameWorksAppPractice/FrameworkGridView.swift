@@ -9,22 +9,47 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     
-    let sample = MockData.sampleFramework
+    let columns: [GridItem] = [GridItem(.flexible()),
+                               GridItem(.flexible()),
+                               GridItem(.flexible())]
     
     var body: some View {
-        VStack {
-            Image(sample.imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
-            
-            Text(sample.imageName.capitalized)
-                .font(.system(size: 32, weight: .bold, design: .default))
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            }
+            .padding(.top)
         }
+        .navigationTitle("Apps")
     }
 }
 
 #Preview {
-    FrameworkGridView()
+    NavigationView {
+        FrameworkGridView()
+    }
 }
 
+struct FrameworkTitleView: View {
+    
+    let name: String
+    let imageName: String
+    
+    var body: some View {
+        VStack {
+            Image(imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 90, height: 90)
+            
+            Text(name)
+                .font(.system(size: 20, weight: .semibold, design: .serif))
+                .minimumScaleFactor(0.6)
+        }
+    }
+}
