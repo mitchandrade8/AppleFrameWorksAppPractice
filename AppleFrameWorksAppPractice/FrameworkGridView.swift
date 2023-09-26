@@ -16,12 +16,12 @@ struct FrameworkGridView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns) {
-                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-                FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+                // Iterate through all our data
+                ForEach(MockData.frameworks, id: \.self) { framework in
+                    FrameworkTitleView(name: framework.name,
+                                       imageName: framework.imageName)
+
+                }
             }
             .padding(.top)
         }
