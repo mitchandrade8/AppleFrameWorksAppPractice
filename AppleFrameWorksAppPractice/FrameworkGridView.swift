@@ -20,14 +20,13 @@ struct FrameworkGridView: View {
             LazyVGrid(columns: columns) {
                 // Iterate through all our data
                 ForEach(MockData.frameworks) { framework in
-                    FrameworkTitleView(name: framework.name,
-                                       imageName: framework.imageName)
+                    FrameworkTitleView(framework: framework)
 
                 }
             }
             .padding(.top)
         }
-        .navigationTitle("Apps")
+        .navigationTitle("Apple Frameworks")
     }
 }
 
@@ -38,18 +37,20 @@ struct FrameworkGridView: View {
 }
 
 struct FrameworkTitleView: View {
+
+    let framework: Framework
     
-    let name: String
-    let imageName: String
+//    let name: String
+//    let imageName: String
     
     var body: some View {
         VStack {
-            Image(imageName)
+            Image(framework.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 90, height: 90)
             
-            Text(name)
+            Text(framework.name)
                 .font(.system(size: 20, weight: .semibold, design: .serif))
                 .minimumScaleFactor(0.6)
         }
