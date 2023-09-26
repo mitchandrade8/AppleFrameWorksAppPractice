@@ -16,24 +16,26 @@ struct FrameworkGridView: View {
     ]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns) {
-                // Iterate through all our data
-                ForEach(MockData.frameworks) { framework in
-                    FrameworkTitleView(framework: framework)
-
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    // Iterate through all our data
+                    ForEach(MockData.frameworks) { framework in
+                        FrameworkTitleView(framework: framework)
+                            
+                    }
                 }
+                .padding(.top)
             }
-            .padding(.top)
+            .navigationTitle("Apple Frameworks")
         }
-        .navigationTitle("Apple Frameworks")
     }
 }
 
 #Preview {
-    NavigationView {
+    
         FrameworkGridView()
-    }
+    
 }
 
 struct FrameworkTitleView: View {
