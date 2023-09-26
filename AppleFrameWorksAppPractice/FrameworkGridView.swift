@@ -17,7 +17,7 @@ struct FrameworkGridView: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 // Iterate through all our data
-                ForEach(MockData.frameworks, id: \.self) { framework in
+                ForEach(MockData.frameworks) { framework in
                     FrameworkTitleView(name: framework.name,
                                        imageName: framework.imageName)
 
