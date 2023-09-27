@@ -42,7 +42,7 @@ struct FrameworkDetailView: View {
             Spacer()
             
             Button {
-                isShowingDetailView = true
+                isShowingDetailView = false
             } label: {
               AFButton(title: "Learn More")
             }
@@ -51,6 +51,7 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(true))
+    FrameworkDetailView(framework: MockData.sampleFramework, 
+                        isShowingDetailView: .constant(true))
 }
 
