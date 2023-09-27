@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+class FrameworkGridViewModel: ObservableObject {
+    
+    var selectedFramework: Framework?
+    
+}

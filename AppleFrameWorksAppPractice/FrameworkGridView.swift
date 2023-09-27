@@ -22,6 +22,9 @@ struct FrameworkGridView: View {
                     // Iterate through all our data
                     ForEach(MockData.frameworks) { framework in
                         FrameworkTitleView(framework: framework)
+                            .onTapGesture {
+                                print("")
+                            }
                             
                     }
                 }
@@ -33,9 +36,7 @@ struct FrameworkGridView: View {
 }
 
 #Preview {
-    
         FrameworkGridView()
-    
 }
 
 struct FrameworkTitleView: View {

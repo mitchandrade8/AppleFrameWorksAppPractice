@@ -14,6 +14,7 @@
 		74904ABF2AC2371200C28294 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904ABE2AC2371100C28294 /* FrameworkGridView.swift */; };
 		74904AC12AC34DDB00C28294 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904AC02AC34DDB00C28294 /* FrameworkDetailView.swift */; };
 		74904AC32AC384F200C28294 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904AC22AC384F200C28294 /* AFButton.swift */; };
+		74904AC52AC4075900C28294 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		74904ABE2AC2371100C28294 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		74904AC02AC34DDB00C28294 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		74904AC22AC384F200C28294 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				74904AAE2AC2324B00C28294 /* AppleFrameWorksAppPracticeApp.swift */,
 				74904ABE2AC2371100C28294 /* FrameworkGridView.swift */,
+				74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */,
 				74904AC02AC34DDB00C28294 /* FrameworkDetailView.swift */,
 				74904AC22AC384F200C28294 /* AFButton.swift */,
 				74904ABC2AC234D000C28294 /* Framework.swift */,
@@ -151,6 +154,7 @@
 				74904ABD2AC234D000C28294 /* Framework.swift in Sources */,
 				74904AC32AC384F200C28294 /* AFButton.swift in Sources */,
 				74904AAF2AC2324B00C28294 /* AppleFrameWorksAppPracticeApp.swift in Sources */,
+				74904AC52AC4075900C28294 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
