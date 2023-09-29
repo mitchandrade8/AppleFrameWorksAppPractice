@@ -11,16 +11,12 @@ struct FrameworkGridView: View {
     
     @StateObject var viewModel = FrameworkGridViewModel()
     
-    let columns: [GridItem] = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
+    
     
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: viewModel.columns) {
                     // Iterate through all our data
                     ForEach(MockData.frameworks) { framework in
                         FrameworkTitleView(framework: framework)
@@ -48,10 +44,7 @@ struct FrameworkGridView: View {
 struct FrameworkTitleView: View {
 
     let framework: Framework
-    
-//    let name: String
-//    let imageName: String
-    
+
     var body: some View {
         VStack {
             Image(framework.imageName)
