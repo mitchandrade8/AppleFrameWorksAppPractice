@@ -41,20 +41,4 @@ struct FrameworkGridView: View {
         FrameworkGridView()
 }
 
-struct FrameworkTitleView: View {
 
-    let framework: Framework
-
-    var body: some View {
-        VStack {
-            Image(framework.imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 90, height: 90)
-            
-            Text(framework.name)
-                .font(.system(size: 20, weight: .semibold, design: .serif))
-                .minimumScaleFactor(0.6)
-        }
-    }
-}

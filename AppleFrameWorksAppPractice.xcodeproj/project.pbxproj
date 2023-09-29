@@ -16,6 +16,7 @@
 		74904AC32AC384F200C28294 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904AC22AC384F200C28294 /* AFButton.swift */; };
 		74904AC52AC4075900C28294 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */; };
 		74904AC72AC4AE7D00C28294 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904AC62AC4AE7D00C28294 /* SafariView.swift */; };
+		74904AF22AC7865A00C28294 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904AF12AC7865A00C28294 /* FrameworkTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		74904AC22AC384F200C28294 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		74904AC62AC4AE7D00C28294 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		74904AF12AC7865A00C28294 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				74904ABE2AC2371100C28294 /* FrameworkGridView.swift */,
 				74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */,
 				74904AC02AC34DDB00C28294 /* FrameworkDetailView.swift */,
+				74904AF12AC7865A00C28294 /* FrameworkTitleView.swift */,
 				74904AC62AC4AE7D00C28294 /* SafariView.swift */,
 				74904AC22AC384F200C28294 /* AFButton.swift */,
 				74904ABC2AC234D000C28294 /* Framework.swift */,
@@ -158,6 +161,7 @@
 				74904AC32AC384F200C28294 /* AFButton.swift in Sources */,
 				74904AAF2AC2324B00C28294 /* AppleFrameWorksAppPracticeApp.swift in Sources */,
 				74904AC52AC4075900C28294 /* FrameworkGridViewModel.swift in Sources */,
+				74904AF22AC7865A00C28294 /* FrameworkTitleView.swift in Sources */,
 				74904AC72AC4AE7D00C28294 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

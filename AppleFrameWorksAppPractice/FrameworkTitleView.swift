@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct FrameworkTitleView: View {
+
+    let framework: Framework
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(framework.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 90, height: 90)
+            
+            Text(framework.name)
+                .font(.system(size: 20, weight: .semibold, design: .serif))
+                .minimumScaleFactor(0.6)
+        }
     }
 }
 
 #Preview {
-    FrameworkTitleView()
+    FrameworkTitleView(framework: MockData.sampleFramework)
 }
