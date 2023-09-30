@@ -31,7 +31,6 @@ struct FrameworkDetailView: View {
             }
             .padding()
             
-            
             Spacer()
             
             FrameworkTitleView(framework: framework)
