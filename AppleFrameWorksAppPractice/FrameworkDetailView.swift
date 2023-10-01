@@ -10,6 +10,7 @@ import SwiftUI
 struct FrameworkDetailView: View {
 
     var framework: Framework
+    /// If passing data down 2 or more views then consider using Environment
     @Binding var isShowingDetailView: Bool
     @State private var isShowingSafariView = false
     

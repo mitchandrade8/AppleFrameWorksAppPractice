@@ -46,6 +46,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		740EB0A12ACA03B0008E5798 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				740EB0A22ACA03DE008E5798 /* FrameworkGridView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		740EB0A22ACA03DE008E5798 /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */,
+				74904ABE2AC2371100C28294 /* FrameworkGridView.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
 		74904AA22AC2324B00C28294 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +82,8 @@
 		74904AAD2AC2324B00C28294 /* AppleFrameWorksAppPractice */ = {
 			isa = PBXGroup;
 			children = (
+				740EB0A12ACA03B0008E5798 /* Screens */,
 				74904AAE2AC2324B00C28294 /* AppleFrameWorksAppPracticeApp.swift */,
-				74904ABE2AC2371100C28294 /* FrameworkGridView.swift */,
-				74904AC42AC4075900C28294 /* FrameworkGridViewModel.swift */,
 				74904ABC2AC234D000C28294 /* Framework.swift */,
 				74904AC02AC34DDB00C28294 /* FrameworkDetailView.swift */,
 				74904AF32AC8BB9100C28294 /* XDismissButton.swift */,
