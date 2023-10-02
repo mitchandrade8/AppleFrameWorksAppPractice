@@ -12,7 +12,7 @@ struct FrameworkTitleView: View {
     let framework: Framework
 
     var body: some View {
-        VStack {
+        HStack {
             Image(framework.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
