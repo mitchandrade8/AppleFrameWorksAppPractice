@@ -16,11 +16,12 @@ struct FrameworkTitleView: View {
             Image(framework.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 90, height: 90)
+                .frame(width: 70, height: 70)
             
             Text(framework.name)
                 .font(.system(size: 20, weight: .semibold, design: .serif))
                 .minimumScaleFactor(0.6)
+                .padding()
         }
     }
 }
